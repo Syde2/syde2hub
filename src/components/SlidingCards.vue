@@ -8,8 +8,8 @@
 			<label for="c1" class="card">
 				<div class="row">
 					<div class="icon">I</div>
-					<div class="description my-font">
-						<h4>Faery</h4>
+					<div class="description">
+						<h4>DREAM</h4>
 						<p>Faery comes with creativity</p>
 					</div>
 				</div>
@@ -20,7 +20,7 @@
 				<div class="row">
 					<div class="icon">II</div>
 					<div class="description">
-						<h4>Digital Technology</h4>
+						<h4>Digital </h4>
 						<p>Gets better every day -
 							stay tuned</p>
 					</div>
@@ -32,7 +32,7 @@
 				<div class="row">
 					<div class="icon">III</div>
 					<div class="description">
-						<h4>Globalization</h4>
+						<h4>FAIRY</h4>
 						<p>Help people all over the world</p>
 					</div>
 				</div>
@@ -43,7 +43,7 @@
 				<div class="row">
 					<div class="icon">IV</div>
 					<div class="description">
-						<h4>New technologies</h4>
+						<h4> TOMORROW </h4>
 						<p>Space engineering becomes
 							more and more advanced</p>
 					</div>
@@ -59,7 +59,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -96,7 +95,6 @@ body {
 }
 
 .card > .row {
-    color: #2E3440;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -124,19 +122,18 @@ body {
     transform: translateY(30px);
     transition-delay: .3s;
     transition: all .3s ease;
-	font-family: 'satoshi';
+	backdrop-filter: blur(5px);
 
 }
 
 .description p {
-    color: #2E3440;
     padding-top: 5px;
-	font-family: 'satoshi';
-
 }
 
 .description h4 {
     text-transform: uppercase;
+	font-size: 3rem !important;
+
 }
 
 input {
