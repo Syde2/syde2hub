@@ -1,0 +1,9 @@
+@font-face {
+	font-family: satoshi;
+	src: url(..assets/fonts/Satoshi-Variable.woff);
+  }
+  
+  // declare a class which applies it
+  .my-font {
+	font-family: 'satoshi';
+  }
