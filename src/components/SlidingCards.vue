@@ -7,17 +7,18 @@
 			<input type="radio" name="slide" id="c1" checked>
 			<label for="c1" class="card">
 				<div class="row">
-					<div class="icon">1</div>
-					<div class="description">
+					<div class="icon">I</div>
+					<div class="description my-font">
 						<h4>Faery</h4>
 						<p>Faery comes with creativity</p>
 					</div>
 				</div>
 			</label>
+
 			<input type="radio" name="slide" id="c2">
 			<label for="c2" class="card">
 				<div class="row">
-					<div class="icon">2</div>
+					<div class="icon">II</div>
 					<div class="description">
 						<h4>Digital Technology</h4>
 						<p>Gets better every day -
@@ -25,20 +26,22 @@
 					</div>
 				</div>
 			</label>
+
 			<input type="radio" name="slide" id="c3">
 			<label for="c3" class="card">
 				<div class="row">
-					<div class="icon">3</div>
+					<div class="icon">III</div>
 					<div class="description">
 						<h4>Globalization</h4>
 						<p>Help people all over the world</p>
 					</div>
 				</div>
 			</label>
+
 			<input type="radio" name="slide" id="c4">
 			<label for="c4" class="card">
 				<div class="row">
-					<div class="icon">4</div>
+					<div class="icon">IV</div>
 					<div class="description">
 						<h4>New technologies</h4>
 						<p>Space engineering becomes
@@ -46,6 +49,7 @@
 					</div>
 				</div>
 			</label>
+			
 		</div>
 	</div>
 </template>
@@ -98,7 +102,7 @@ body {
 }
 
 .card > .row > .icon {
-    background: white;
+    background: rgba(255, 255, 255, 0.8);
     color: black;
     border-radius: 50%;
     width: 50px;
@@ -106,6 +110,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 15px;
+	font-family: 'satoshi';
 }
 
 .card > .row > .description {
@@ -119,11 +124,15 @@ body {
     transform: translateY(30px);
     transition-delay: .3s;
     transition: all .3s ease;
+	font-family: 'satoshi';
+
 }
 
 .description p {
     color: #2E3440;
     padding-top: 5px;
+	font-family: 'satoshi';
+
 }
 
 .description h4 {
@@ -144,15 +153,15 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('./img1.webp');
+    background-image: url('/img1.webp');
 }
 .card[for="c2"] {
-    background-image: url('./img2.webp');
+    background-image: url('/img2.webp');
 }
 .card[for="c3"] {
-    background-image: url('./img3.webp');
+    background-image: url('/img3.webp');
 }
 .card[for="c4"] {
-    background-image: url('./img4.jpeg');
+    background-image: url('/img4.jpeg');
 }
 </style>
