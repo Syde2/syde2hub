@@ -15,7 +15,7 @@ const props = defineProps({
 			<div class="icon">{{props.id}}</div>
 			<div class="description">
 				<h4> {{props.title}} </h4>
-				<p>{{ props.label }}  asasasas</p>
+				<p>{{ props.title }} </p>
 			</div>
 		</div>
 	</label>
@@ -37,43 +37,44 @@ const props = defineProps({
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
 }
 
-.card > .row {
+ .row {
     display: flex;
     flex-wrap: nowrap;
 }
 
-.card > .row > .icon {
+ .icon {
     background: rgba(255, 255, 255, 0.8);
     color: black;
     border-radius: 50%;
-    width: 50px;
+	align-self: end;
+    width: 5vw;
+	height: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 15px;
 	font-family: 'satoshi';
 }
-.card > .row > .description {
+.description {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
-    height: 80px;
-    width: 520px;
+     overflow: hidden; 
+    width: 100%;
     opacity: 0;
     transform: translateY(30px);
     transition-delay: .3s;
     transition: all .3s ease;
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px); 
 
 }
 .description p {
     padding-top: 5px;
+	background-color: red;
 }
 .description h4 {
     text-transform: uppercase;
 	font-size: 3rem !important;
-
 }
 
 input {
