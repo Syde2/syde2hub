@@ -10,7 +10,8 @@ const leftDrawerOpen = ref(false)
       <q-toolbar>
 
         <q-toolbar-title>
-          <p class="text-h4 text-white my-font q-pa-sm"> 師 </p>
+          <p class="text-h4 text-white my-font q-pa-sm"> 
+             </p>
         </q-toolbar-title>
 
         
