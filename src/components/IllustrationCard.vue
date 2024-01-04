@@ -4,13 +4,14 @@ const props = defineProps({
 	title: String,
 	label: String,
 	image: String,
+	checked:Boolean
 
 })
 </script>
 
 <template>
 	<div class="container">
-		<input type="radio" name="slide" :id="props.id" >
+		<input type="radio" name="slide" :id="props.id" :checked="props.checked" >
 		<label :for="props.id" class="card" :style="{ 'background-image': 'url(' + props.image + ')' }">
 			<div class="row">
 				<div class="icon">	{{ props.id }} </div>		
