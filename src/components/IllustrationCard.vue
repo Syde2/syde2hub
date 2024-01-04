@@ -51,13 +51,15 @@ const props = defineProps({
 	color: white;
 	display: flex;
 	flex-wrap: nowrap;
+	align-items: end;
 }
 
 .card>.row>.icon {
-	background: #223;
+	background: #2E3440;
 	color: white;
 	border-radius: 50%;
 	width: 50px;
+	height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -69,7 +71,7 @@ const props = defineProps({
 	justify-content: center;
 	flex-direction: column;
 	overflow: hidden;
-	height: 80px;
+	height: 230px;
 	width: 520px;
 	opacity: 0;
 	transform: translateY(30px);
@@ -78,12 +80,12 @@ const props = defineProps({
 }
 
 .description p {
-	color: #b0b0ba;
-	padding-top: 5px;
+	color: white;
 }
 
 .description h4 {
 	text-transform: uppercase;
+	font-size: 3rem;
 }
 
 input {
