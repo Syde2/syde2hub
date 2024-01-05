@@ -5,7 +5,7 @@ import IllustrationCard from './IllustrationCard.vue';
 <template>
 	<div class="container flex no-wrap justify-start" style="height: 25vw;" >
 
-		<IllustrationCard :checked="true" id='I' title="Dream" image='/new.jpeg'
+		<IllustrationCard :checked="true" id='I' title="Dream" image='/new.webp'
 			label="Space engineering becomes more and more advanced" />
 
 		<IllustrationCard id='II' title="Dream" image='/new2.jpeg'
