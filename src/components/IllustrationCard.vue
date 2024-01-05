@@ -13,10 +13,12 @@ const props = defineProps({
 	<div class="container">
 		<input type="radio" name="slide" :id="props.id" :checked="props.checked" >
 		<label :for="props.id" class="card" :style="{ 'background-image': 'url(' + props.image + ')' }">
-			<div class="row">
-				<div class="icon">	{{ props.id }} </div>		
-				<div class="description">
-					<h4> {{ props.title }} </h4>
+			<div class="fit row text-white">
+				<div class="col-2 ">
+					<h4 class="title col-2"> {{ props.title }} </h4>
+					<div class="icon col-8">	{{ props.id }} </div>		
+				</div>
+				<div class="description ">
 					<p> {{ props.label }} </p>
 				</div>
 			</div>
@@ -47,14 +49,9 @@ const props = defineProps({
 	box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
 }
 
-.card>.row {
-	color: white;
-	display: flex;
-	flex-wrap: nowrap;
-	align-items: end;
-}
 
-.card>.row>.icon {
+
+.icon {
 	background: #2E3440;
 	color: white;
 	border-radius: 50%;
@@ -66,7 +63,7 @@ const props = defineProps({
 	margin: 15px;
 }
 
-.card>.row>.description {
+.description {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -83,9 +80,16 @@ const props = defineProps({
 	color: white;
 }
 
-.description h4 {
+.title {
 	text-transform: uppercase;
 	font-size: 3rem;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+	
 }
 
 input {
