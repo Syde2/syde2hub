@@ -14,14 +14,14 @@ const props = defineProps({
 		<input type="radio" name="slide" :id="props.id" :checked="props.checked" >
 		<label :for="props.id" class="card" :style="{ 'background-image': 'url(' + props.image + ')' }">
 			<div class="fit  row text-white">
-				<div class="col-2 ">
+				<div class=" flex justify-center items-end ">
 					<h4 class="title"> {{ props.title }} </h4>
-					<div class="icon">	{{ props.id }} </div>		
+					<div class="icon ">{{ props.id }} </div>		
 				</div>
 
 			</div>
-			<div class="description col-8 ">
-					<p> {{ props.label }} </p>
+			<div class="description col-8  ">
+					<p class="ellipsis-3-lines"> {{ props.label }} </p>
 				</div>
 		</label>
 		
@@ -38,9 +38,10 @@ const props = defineProps({
 }
 
 .card {
-	width: 80px;
+	width: 100px;
 	border-radius: .75rem;
 	background-size: cover;
+	background-position: center;
 	cursor: pointer;
 	overflow: hidden;
 	border-radius: 2rem;
@@ -86,19 +87,17 @@ const props = defineProps({
 	margin-right: 1rem;
 	background-color: rgba(35, 33, 33, 0.549);
 	padding: 0.5rem;
+	padding-bottom: 0.1rem;
 }
 
 .title {
 	text-transform: uppercase;
-	font-size: 3rem;
+	font-size: 2.8rem;
 	writing-mode: vertical-rl;
-	text-orientation: upright;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 15px;
+	text-orientation: sideways-right;
+	margin: 10px;
 	font-weight: 600;
-
+	max-height: 300px;
 }
 
 input {
@@ -125,7 +124,7 @@ input:checked+label .description {
 }
 
 input:checked+label .title {
-color: rgba(255, 255, 255, 0.338);
+color: rgba(255, 255, 255, 0.9);
 
 }
 
