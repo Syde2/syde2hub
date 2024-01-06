@@ -3,25 +3,25 @@ import IllustrationCard from './IllustrationCard.vue';
 
 const data = [
 	{
-		id:0, 
-		title: 'title',
-		image:'/img1.webp', 
-		label: 'lorem Ipsum',
+		id:1, 
+		title: 'Projects',
+		image:'/img1.jpeg', 
+		label: '',
 		checked:true
 	},
 	{
-		id:1, 
-		title: 'title',
-		image:'/img2.webp', 
+		id:2, 
+		title: 'About Me',
+		image:'/img2.jpeg', 
 		label: 'lorem Ipsum',
-		checked:true
+		checked:false
 	},
 	{
 		id:3, 
-		title: 'title',
-		image:'/img3.webp', 
+		title: 'Hobbies',
+		image:'/img3.jpeg', 
 		label: 'lorem Ipsum',
-		checked:true
+		checked:false
 	}
 ]
 
