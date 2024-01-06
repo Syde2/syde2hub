@@ -1,27 +1,21 @@
 <script setup>
-const props = defineProps({
-	id: String,
-	title: String,
-	label: String,
-	image: String,
-	checked:Boolean
-
-})
+const props = defineProps(['data'])
+const {id, title, label, image, checked} = props.data
 </script>
 
 <template>
 	<div class="container">
-		<input type="radio" name="slide" :id="props.id" :checked="props.checked" >
-		<label :for="props.id" class="card" :style="{ 'background-image': 'url(' + props.image + ')' }">
+		<input type="radio" name="slide" :id="id" :checked="checked" >
+		<label :for="id" class="card" :style="{ 'background-image': 'url(' + image + ')' }">
 			<div class="fit  row text-white">
 				<div class=" flex justify-center items-end ">
-					<h4 class="title"> {{ props.title }} </h4>
-					<div class="icon ">{{ props.id }} </div>		
+					<h4 class="title"> {{ title }} </h4>
+					<div class="icon ">{{ id }} </div>		
 				</div>
 
 			</div>
 			<div class="description col-8  ">
-					<p class="ellipsis-3-lines"> {{ props.label }} </p>
+					<p class="ellipsis-3-lines"> {{ label }} </p>
 				</div>
 		</label>
 		
@@ -110,12 +104,11 @@ input:hover+label{
 
 input:checked+label {
 	width: 600px;
+	max-width: 70vw;
 }
 input:active+label {
 	transform: perspective(800px) rotateX(20deg) rotateY(0deg);
-
 }
-
 
 input:checked+label .description {
 	opacity: 1 !important;
@@ -127,8 +120,6 @@ input:checked+label .title {
 color: rgba(255, 255, 255, 0.9);
 
 }
-
-
 
 
 
