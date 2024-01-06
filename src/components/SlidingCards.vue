@@ -3,24 +3,24 @@ import IllustrationCard from './IllustrationCard.vue';
 
 const data = [
 	{
-		id:1, 
+		id:'P', 
 		title: 'Projects',
 		image:'/img1.jpeg', 
-		label: '',
+		label: ' "It takes half your life before you discover life is a do-it-yourself project."- Napoleon Hill ',
 		checked:true
 	},
 	{
-		id:2, 
+		id: 'A', 
 		title: 'About Me',
 		image:'/img2.jpeg', 
-		label: 'lorem Ipsum',
+		label: ' "Tell me and I forget. Teach me and I remember. Involve me and I learn." - Benjamin Franklin',
 		checked:false
 	},
 	{
-		id:3, 
+		id:'H', 
 		title: 'Hobbies',
 		image:'/img3.jpeg', 
-		label: 'lorem Ipsum',
+		label: '"Where words fail, music speaks."- Hans Andersen ',
 		checked:false
 	}
 ]
