@@ -1,5 +1,5 @@
 <script setup>
-import SlidingCards from 'components/SlidingCards.vue'
+import SlidingCards from 'components/Index/SlidingCards.vue'
 </script>
 
 <template>

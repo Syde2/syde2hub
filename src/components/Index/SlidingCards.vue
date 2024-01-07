@@ -6,6 +6,7 @@ const data = [
 		id:'P', 
 		title: 'Projects',
 		image:'/img1.jpeg', 
+		to : '/projects',
 		label: ' "It takes half your life before you discover life is a do-it-yourself project."- Napoleon Hill ',
 		checked:true
 	},

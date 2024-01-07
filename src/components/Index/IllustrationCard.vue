@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps(['data'])
-const {id, title, label, image, checked} = props.data
+const {id, title, label, image, checked, to} = props.data
 </script>
 
 <template>
@@ -14,7 +14,7 @@ const {id, title, label, image, checked} = props.data
 				</div>
 
 			</div>
-			<div class="description col-8  ">
+			<div class="description col-8  " @click="()=>$router.push(to) " >
 					<p class="ellipsis-3-lines"> {{ label }} </p>
 				</div>
 		</label>
